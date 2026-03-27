@@ -2,18 +2,13 @@ package com.library.backend.dto;
 
 import com.library.backend.model.Genero;
 import com.library.backend.model.Subgenero;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.util.Set;
+import java.util.List;
 
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+
+@Data
 public class LivroDetalheDTO {
 
         private Long id;
@@ -28,14 +23,12 @@ public class LivroDetalheDTO {
 
         private Integer paginas;
 
-        private Integer ano;
+        private Integer anoPublicado;
 
-        private String descricao;
+        private String sinopse;
 
-        private String resenha;
+        private List<Genero> generos;
 
-        private Set<Genero> generos;
-
-        private Set<Subgenero> subgeneros;
+        private List<Subgenero> subgeneros;
 
 }

@@ -2,21 +2,15 @@ package com.library.backend.dto;
 
 import com.library.backend.model.Genero;
 import com.library.backend.model.Subgenero;
+import jakarta.persistence.ManyToMany;
 import jakarta.validation.constraints.*;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.util.Set;
+import java.util.List;
 
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
-public class LivroRequestDTO {
-
+@Data
+public class LivroEstanteDTO {
 
     @NotBlank
     private String titulo;
@@ -36,12 +30,16 @@ public class LivroRequestDTO {
 
     @NotNull
     @Min(0)
-    private Integer ano;
+    private Integer anoPublicado;
 
-    private String descricao;
+    @NotNull
+    @Min(0)
+    private int vezesLido;
 
-    private Set<Genero> generos;
+    @NotNull
+    private List<Genero> generos;
 
-    private Set<Subgenero> subgeneros;
+    @NotNull
+    private List<Subgenero> subgeneros;
 
 }

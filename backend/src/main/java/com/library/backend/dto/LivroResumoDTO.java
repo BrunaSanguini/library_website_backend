@@ -1,17 +1,8 @@
 package com.library.backend.dto;
 
-import com.library.backend.model.Genero;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import java.util.Set;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
+@Data
 public class LivroResumoDTO {
 
     private Long id;
@@ -19,9 +10,5 @@ public class LivroResumoDTO {
     private String titulo;
 
     private String autor;
-
-    private String editora;
-
-    private Set<Genero> generos;
 
 }
