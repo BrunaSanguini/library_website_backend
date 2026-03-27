@@ -1,4 +1,4 @@
-package com.library.backend.dto;
+package com.library.backend.dto.livro;
 
 import com.library.backend.model.Genero;
 import com.library.backend.model.Subgenero;
@@ -26,6 +26,10 @@ public class LivroDetalheDTO {
         private Integer anoPublicado;
 
         private String sinopse;
+
+        private int vezesLido;
+
+        private String idioma;
 
         private List<Genero> generos;
 

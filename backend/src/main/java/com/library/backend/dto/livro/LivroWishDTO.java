@@ -1,16 +1,17 @@
-package com.library.backend.dto;
+package com.library.backend.dto.livro;
 
 import com.library.backend.model.Genero;
 import com.library.backend.model.Subgenero;
-import jakarta.persistence.ManyToMany;
-import jakarta.validation.constraints.*;
-
-import lombok.*;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import lombok.Data;
 
 import java.util.List;
 
 @Data
-public class LivroEstanteDTO {
+public class LivroWishDTO {
 
     @NotBlank
     private String titulo;
@@ -18,6 +19,7 @@ public class LivroEstanteDTO {
     @NotBlank
     private String autor;
 
+    @NotBlank
     private String editora;
 
     @NotBlank
@@ -29,17 +31,17 @@ public class LivroEstanteDTO {
     private Integer paginas;
 
     @NotNull
-    @Min(0)
     private Integer anoPublicado;
 
-    @NotNull
-    @Min(0)
-    private int vezesLido;
+    @NotBlank
+    private String sinopse;
+
+    @NotBlank
+    private String idioma;
 
     @NotNull
     private List<Genero> generos;
 
     @NotNull
     private List<Subgenero> subgeneros;
-
 }

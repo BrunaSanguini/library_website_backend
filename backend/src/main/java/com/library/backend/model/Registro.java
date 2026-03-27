@@ -22,6 +22,9 @@ public class Registro {
 
     private LocalDate fimLeitura;
 
+    @ManyToOne
+    private Livro livroLido;
+
     private String resenha;
 
     private double estrelas;

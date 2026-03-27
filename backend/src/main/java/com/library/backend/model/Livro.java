@@ -31,6 +31,8 @@ public class Livro {
 
     private int vezesLido;
 
+    private String idioma;
+
     @ManyToMany
     private List<Genero> generos;
 

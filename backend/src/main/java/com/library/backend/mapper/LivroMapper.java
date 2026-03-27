@@ -1,9 +1,9 @@
 package com.library.backend.mapper;
 
-import com.library.backend.dto.LivroDetalheDTO;
-import com.library.backend.dto.LivroEstanteDTO;
-import com.library.backend.dto.LivroResumoDTO;
-import com.library.backend.dto.LivroWishDTO;
+import com.library.backend.dto.livro.LivroDetalheDTO;
+import com.library.backend.dto.livro.LivroEstanteDTO;
+import com.library.backend.dto.livro.LivroResumoDTO;
+import com.library.backend.dto.livro.LivroWishDTO;
 import com.library.backend.model.Livro;
 import org.mapstruct.Mapper;
 

@@ -1,16 +1,15 @@
-package com.library.backend.dto;
+package com.library.backend.dto.livro;
 
 import com.library.backend.model.Genero;
 import com.library.backend.model.Subgenero;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import lombok.Data;
+import jakarta.validation.constraints.*;
+
+import lombok.*;
 
 import java.util.List;
 
 @Data
-public class LivroWishDTO {
+public class LivroEstanteDTO {
 
     @NotBlank
     private String titulo;
@@ -22,6 +21,7 @@ public class LivroWishDTO {
     private String editora;
 
     @NotBlank
+    @Size(min = 10, max = 13)
     private String isbn;
 
     @NotNull
@@ -34,9 +34,13 @@ public class LivroWishDTO {
     @NotBlank
     private String sinopse;
 
+    @NotBlank
+    private String idioma;
+
     @NotNull
     private List<Genero> generos;
 
     @NotNull
     private List<Subgenero> subgeneros;
+
 }

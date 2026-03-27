@@ -1,4 +1,4 @@
-package com.library.backend.dto;
+package com.library.backend.dto.livro;
 
 import lombok.*;
 

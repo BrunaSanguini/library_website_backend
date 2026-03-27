@@ -1,8 +1,8 @@
 package com.library.backend.services;
 
-import com.library.backend.dto.LivroDetalheDTO;
-import com.library.backend.dto.LivroEstanteDTO;
-import com.library.backend.dto.LivroWishDTO;
+import com.library.backend.dto.livro.LivroDetalheDTO;
+import com.library.backend.dto.livro.LivroEstanteDTO;
+import com.library.backend.dto.livro.LivroWishDTO;
 import com.library.backend.mapper.LivroMapper;
 import com.library.backend.model.Livro;
 import com.library.backend.repository.LivroRepository;
@@ -42,7 +42,11 @@ public class LivroService {
 
     }
 
-    public void deletar(Long id){}
+    public void deletar(Long id){
+
+        
+
+    }
 
     public void alterar(Long id, LivroEstanteDTO livroRequestDTO){}
 
