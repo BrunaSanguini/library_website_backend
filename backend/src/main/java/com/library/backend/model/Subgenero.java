@@ -1,10 +1,13 @@
 package com.library.backend.model;
 
 import jakarta.persistence.*;
-import lombok.Data;
+import lombok.*;
 
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Subgenero {
 

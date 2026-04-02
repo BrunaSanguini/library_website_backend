@@ -21,7 +21,7 @@ public class Usuario {
     private String senha;
 
     @ManyToMany
-    private List<Livro> livros;
+    private List<Livro> estante;
 
     @ManyToMany
     private List<Livro> wishList;

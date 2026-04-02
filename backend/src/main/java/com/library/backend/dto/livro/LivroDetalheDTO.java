@@ -1,5 +1,6 @@
 package com.library.backend.dto.livro;
 
+import com.library.backend.enums.Status;
 import com.library.backend.model.Genero;
 import com.library.backend.model.Subgenero;
 import lombok.*;
@@ -30,6 +31,8 @@ public class LivroDetalheDTO {
         private int vezesLido;
 
         private String idioma;
+
+        private Status status;
 
         private List<Genero> generos;
 

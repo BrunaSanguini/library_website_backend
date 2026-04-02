@@ -1,5 +1,6 @@
 package com.library.backend.model;
 
+import com.library.backend.enums.Status;
 import jakarta.persistence.*;
 
 import lombok.*;
@@ -8,7 +9,10 @@ import java.util.List;
 import java.util.Set;
 
 @Entity
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Livro {
 
     @Id
@@ -32,6 +36,9 @@ public class Livro {
     private int vezesLido;
 
     private String idioma;
+
+    @Enumerated(EnumType.STRING)
+    private Status status;
 
     @ManyToMany
     private List<Genero> generos;
